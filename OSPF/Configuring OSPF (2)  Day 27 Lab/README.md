@@ -223,11 +223,6 @@ R1(config-router)#default-information originate
 - ✅ La ruta por defecto (0.0.0.0/0) se anuncia desde R1 al dominio OSPF.
 - ✅ Las interfaces FastEthernet tienen costo 100 (reference-bandwidth 10000).
 - ✅ Las interfaces loopback están configuradas como pasivas donde corresponde.
-## Problemas encontrados
-
-- Se puede configurar OSPF directamente en cada interfaz con `ip ospf PROCESS_ID area AREA_ID`, sin necesidad de entrar al modo `router ospf` para habilitarlo.
-- R4 usa `passive-interface default` y luego habilita solo las interfaces que deben formar adyacencias (F1/0, F2/0).
-- R2 y R3 usan `passive-interface loopback 0` de forma individual.
 
 ## Aprendizajes
 
