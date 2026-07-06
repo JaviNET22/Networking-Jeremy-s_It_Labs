@@ -45,16 +45,6 @@ standby 1 ip 10.0.1.254
 
 ## Verificación
 
-### Comandos ejecutados
-
-```bash
-show standby
-ping 8.8.8.8
-arp -a
-```
-
-### Resultados
-
 Se configuró la VIP `10.0.1.254` como gateway predeterminado de los PCs. Al hacer ping a `8.8.8.8`, se verificó que la MAC address aprendida en la tabla ARP corresponde a la MAC virtual de HSRP.
 
 ![ARP inicial - MAC HSRPv1](images/Pasted%20image%2020260706170727.png)
@@ -86,16 +76,8 @@ Se encendió R1 nuevamente. Gracias a la configuración `standby 1 preempt`, R1 
 ## Problemas encontrados
 
 - Packet Tracker mostraba la MAC de HSRPv1 (`0000.0c07.ac01`) en lugar de la de HSRPv2 (`0000.0c9f.f001`) debido a limitaciones del simulador. Se solucionó reiniciando el router.
-- Al desactivar R1, R2 no tomaba el rol Active de inmediato hasta que se verificó la configuración de `preempt`.
 
 ## Aprendizajes
-
-- Configuración de HSRPv2 con prioridades personalizadas.
-- Uso de `preempt` para que el router con mayor prioridad recupere el rol Active tras una recuperación.
-- La MAC virtual de HSRPv2 sigue el formato `0000.0c9f.XXXX`.
-- Verificación de failover mediante gratuitous ARP y tabla ARP de los PCs.
-
-## Ficha del laboratorio
 
 | Campo       | Valor               |
 | ----------- | ------------------- |
