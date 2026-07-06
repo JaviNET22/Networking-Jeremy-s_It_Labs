@@ -4,10 +4,6 @@
 
 Configurar HSRPv2 entre dos routers.
 
-## Topología
-
-![Topología](images/Pasted%20image%2020260706165620.png)
-
 ## Direccionamiento
 
 ### Subred LAN
