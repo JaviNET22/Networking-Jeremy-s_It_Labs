@@ -101,7 +101,7 @@ R1(config-router)#passive-interface g0/0
 
 | Campo       | Valor                   |
 | ----------- | ----------------------- |
-| Dificultad  | ⭐⭐⭐⭐☆                  |
+| Dificultad  | ⭐⭐⭐☆ ☆                |
 | Tecnologías | OSPF, Cisco IOS, PPP    |
 | Software    | Cisco Packet Tracer     |
 | Estado      | ✅ Completado            |
