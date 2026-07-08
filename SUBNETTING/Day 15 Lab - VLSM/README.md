@@ -19,8 +19,8 @@ En este laboratorio se aplica VLSM a la red `192.168.5.0/24` para crear subredes
 
 Se ordenaron las redes de mayor a menor cantidad de hosts necesarios y se asignaron los bloques de direcciones de forma consecutiva.
 
-![Cálculos - Página 1](img/day15_calculos1.jpg)
-![Cálculos - Página 2](img/day15_calculos2.jpg)
+![Cálculos - Página 1](img/day15_calculos2.jpg)
+![Cálculos - Página 2](img/Calculos4.jpg)
 
 ### Tabla de subredes
 
