@@ -6,11 +6,7 @@ En este laboratorio se configura IPv6 utilizando direcciones generadas con **EUI
 
 ## Topología
 
-La red consta de dos routers (R1 y R2) conectados mediante sus interfaces G0/0. Cada router tiene una LAN propia:
-
-- **R1 G0/1**: Subred `2001:db8::/64` — conecta a PC1
-- **R2 G0/1**: Subred `2001:db8:0:1::/64` — conecta a PC2
-- **R1 G0/0 — R2 G0/0**: Enlace punto a punto (solo direcciones link-local)
+![Topología](img/Topology.png)
 
 ## Cálculo de EUI-64
 
