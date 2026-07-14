@@ -96,7 +96,7 @@ Se verifica que los hosts en diferentes VLANs pueden comunicarse a través del s
 
 ### Tráfico hacia internet
 
-Se prueba conectividad con `1.1.1.1`. El tráfico sale de la VLAN, pasa por la SVI de SW2, luego por el enlace punto a punto hacia R1, que lo reenvía hacia el router de internet.
+Se prueba conectividad con `10.0.0.2`. El tráfico sale de la VLAN, pasa por la SVI de SW2.
 
 ![Tráfico a través del switch multicapa](img/trafico_svi.png)
 
