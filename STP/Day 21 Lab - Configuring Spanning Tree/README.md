@@ -87,7 +87,6 @@ SW4(config-if)#spanning-tree bpduguard enable
 - **PortFast**: hace que el puerto pase directamente al estado forwarding, evitando las fases de listening y learning. Esto acelera la conectividad de los PCs.
 - **BPDU Guard**: si el puerto recibe un BPDU (lo que indicaría que otro switch está conectado), se desactiva automáticamente (errdisable).
 
-![Configuración final](img/stp_final.png)
 
 ## Resumen de comandos
 
